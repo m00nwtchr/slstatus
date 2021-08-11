@@ -61,7 +61,7 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command,  "%s",              "$(pamixer --get-mute) && echo  || echo " },
+	{ run_command,  "%s",              "$(pamixer --get-mute) && echo  || echo " },
 	{ run_command,  ": %s%% | ",       "pamixer --get-volume" },
 	// { run_command,  ": %s%% | ",        "pamixer --get-volume" },
 	// { run_command,  ": %s | ",        "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
