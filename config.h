@@ -64,15 +64,15 @@ static const struct arg args[] = {
 	{ run_command,  "%s",              "$(pamixer --get-mute) && echo  || echo " },
 	{ run_command,  ": %s%% | ",       "pamixer --get-volume" },
 	
-	{ wifi_essid,   "%s | ",           "wlp1s0"     },
+	{ wifi_essid,   "%s | ",           "wlp1s0"               },
 	
-	{ run_command,       "[BAT %s ",        "~/scripts/battery.sh" },	
-	{ battery_perc,      "%s%%]   ",        "BAT0"                 },	
+	{ run_command,  "[BAT %s ",        "~/scripts/battery.sh" },	
+	{ battery_perc, "%s%%]   ",        "BAT0"                 },	
 	
-	{ cpu_perc,          "[CPU  %s%%]   ", NULL	               },
-	{ ram_perc,          "[RAM  %s%%]   ", NULL	               },
+	{ cpu_perc,     "[CPU  %s%%]   ", NULL	                  },
+	{ ram_perc,     "[RAM  %s%%]   ", NULL	                  },
 
-	{ datetime,     "%s",           "%F %T" },
+	{ datetime,     "%s",              "%F %T"                },
 };
 
 
